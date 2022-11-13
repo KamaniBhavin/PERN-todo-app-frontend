@@ -1,0 +1,31 @@
+{
+  "name": "frontend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "concurrently \"webpack --watch --config webpack.dev.js\" \"serve -s dist\"",
+    "build": "webpack --config webpack.prod.js",
+    "prod": "concurrently \"wepack --watch --config webpack.prod.js\" \"serve -s dist\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/react": "^18.0.25",
+    "@types/react-dom": "^18.0.8",
+    "clean-webpack-plugin": "^4.0.0",
+    "concurrently": "^7.5.0",
+    "html-webpack-plugin": "^5.5.0",
+    "serve": "^14.1.1",
+    "ts-loader": "^9.4.1",
+    "typescript": "^4.8.4",
+    "webpack": "^5.75.0",
+    "webpack-cli": "^4.10.0",
+    "webpack-merge": "^5.8.0"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
+}
